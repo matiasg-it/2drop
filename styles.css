@@ -1,12 +1,15 @@
 @import url('normalize.css');
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('footer.css');
+@import url('fontello.css');
 
 
   body
   {
     font-family: 'Dosis', sans-serif;
-    background-color: rgb(12, 9, 9);
+    background-image: url("fondo.jpg");
+    background-size: cover;
   }
   .header-principal
   {
@@ -39,7 +42,7 @@
   {
     text-decoration: none;
     display:block;
-    color:white;
+    color:rgb(255, 255, 255);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
@@ -57,21 +60,22 @@
     width: 100%;
     height: 300px;
     background:url(imagen_about.png) 700px 27px no-repeat;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.315);
   }
 
   .section-presentacion
   {
-    color: black;
+    color: rgba(255, 255, 255, 0.76);
     font-size: 20px;
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.534);
     width: 500px;
     padding: 80px 80px;
   }
 
   .section2-crear
   {
-    color: white;
+    color: rgb(255, 255, 255);
     padding-top:20px;
     padding-bottom: 60px;
     font-size: 60px;
@@ -91,16 +95,16 @@
 
   .info-imagenes
   {
-    height: 170px;
-    width:170px;
-    padding-right: 50px;
+    margin:0 auto;
   }
+
   .info-imagenes h3
   {
-    padding:10px;
+    padding-top:10px;
     margin: 0;
     text-align: center;
-    color: white;
+    text-shadow: 2px 2px 3px rgb(31, 26, 26);
+    color: rgb(255, 255, 255);
   }
   .info-imagenes img  
   {
@@ -108,6 +112,6 @@
     height: 150px;
     width:150px;
     border-radius: 50%;
-    border:4px white solid;
+    border:5px white solid;
   }
  
