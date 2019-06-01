@@ -1,0 +1,58 @@
+.anexo1 
+{
+  padding: 10px;
+  text-align: center;
+  color:white;
+  flex-direction: column;
+  background-image: url(../fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.anexo1 img
+{
+  height: 150px;
+  width:150px;
+  border-radius: 50%;
+  border: 3px white solid;
+}
+
+.anexo1{
+  grid-row: 3 / 4;
+}
+
+.anexo1 span
+{
+  font-size: 30px;
+  font-weight: bold;
+}
+.anexo1 p
+{
+  font-weight: bold;
+}
+
+@media (min-width:500px)
+{
+  .anexo1
+  {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 40px 1fr 1fr;
+  }
+
+  .anexo1 span
+  {
+      grid-column: span 2;
+  }
+}
+
+.anexo2 
+{
+  text-align: center;
+  padding: 10px;
+}
+
+.anexo2
+{
+  grid-row: 4/5;
+}
