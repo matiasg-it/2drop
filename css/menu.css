@@ -8,6 +8,7 @@
   top:0;
   left:0;
   z-index: 100;
+  overflow: hidden;
 }
 
 .cabecera{
@@ -71,12 +72,11 @@
 
 h1
 {
-  transform: translateX(-70%);
   margin: 0;
 }
 .animacion-2
 {
-  animation: animacion-2 3s infinite reverse;
+  animation: animacion-2 6s infinite reverse;
 }
 
 .animacion-2 span
