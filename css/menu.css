@@ -74,8 +74,35 @@ h1
   transform: translateX(-70%);
   margin: 0;
 }
-h1 span{
-  color:rgb(255, 145, 0);
+.animacion-2
+{
+  animation: animacion-2 3s reverse;
+}
+
+.animacion-2 span
+{
+  color:orange;
+}
+
+@keyframes animacion-2
+{
+  0%
+  {
+    transform: scale(0.3);
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: scale(1);
+    transform: rotate(20deg);
+  }
+
+  100%
+  {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+
 }
 
 @media (min-width:1000px)
@@ -103,3 +130,6 @@ h1 span{
     display:none;
   }
 }
+
+
+
