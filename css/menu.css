@@ -76,7 +76,7 @@ h1
 }
 .animacion-2
 {
-  animation: animacion-2 3s reverse;
+  animation: animacion-2 3s infinite reverse;
 }
 
 .animacion-2 span
