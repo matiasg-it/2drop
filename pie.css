@@ -1,0 +1,145 @@
+
+
+.pie-contenedor
+{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 100%;
+  height: min-content;
+  background: linear-gradient(0deg, rgb(58, 58, 58) 0%, rgb(87, 87, 87) 100%);
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.527) inset; 
+  padding: 50px 0px;
+}
+
+.boton-redes
+{
+  flex: 1 1 60%;
+}
+
+.redes
+{
+  width: 20%;
+  height: 200px;
+  flex: 1 1 20%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.redes  *
+{
+  padding: 10
+}
+
+.redes:nth-child(1)
+{
+  order:1;
+}
+
+.redes:nth-child(2)
+{
+  order:3;
+}
+
+
+.redes h4
+{
+  margin: 0;
+  color:var(--naranja);
+}
+
+.redes a
+{
+  display: block;
+  padding-top: 15px;
+  margin:0;
+  font-size: 30px;
+  color:rgba(228, 228, 228, 0.685);
+}
+
+.redes p
+{
+  color:rgba(228, 228, 228, 0.685);
+}
+
+.boton-redes
+{
+  box-sizing: border-box;
+  display: flex;
+  padding:80px 20px 80px 20px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  order: 2;
+}
+
+.boton-redes h4
+{
+  color:rgba(255, 255, 255, 0.548);
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+/*   border-bottom: 0.3px solid rgba(241, 241, 241, 0.212);
+ */
+}
+.icon-chat
+{
+  padding-top:10px;
+  margin: 0;
+  font-size: 80px;
+  color:rgba(228, 228, 228, 0.8);
+}
+
+
+.icon-facebook:hover,
+.icon-instagram:hover
+{
+  color:rgb(212, 212, 212);
+  cursor: pointer;
+  transform: scale(1.2);  
+}
+.icon-chat:hover
+{
+  color:rgb(212, 212, 212);
+  cursor: pointer;
+}
+
+.boton-redes p
+{
+  font-style:italic;
+  font-size: 14px;
+  color:rgba(228, 228, 228, 0.465);
+}
+
+.boton-redes article
+{
+  padding-top: 50px;
+  color:rgba(228, 228, 228, 0.185);
+}
+
+
+/* PIE RESPONSIVE */
+
+@media (max-width:800px)
+
+{
+  .boton-redes
+  {
+    flex: 1 1 100%;
+    order: -1;
+  }
+}
+
+@media (max-width:400px)
+{
+  .redes
+  {
+    flex: 1 1 100%;
+    
+
+  }
+}
+
+/* ////////////// */

@@ -1,0 +1,169 @@
+header
+    {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background-color: rgba(247, 146, 30, 0.849);
+      height: 50px;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+      font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
+      
+    }
+
+    header:hover
+    {
+      height: 70px;
+      background-color: rgb(247, 146, 30);
+      transition: all 1s;
+    }
+
+    header nav ol
+    {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      height: inherit;
+    }
+
+    header nav ol li
+    {
+      text-align: center;
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    header a 
+    {
+      text-decoration: none;
+      color:rgb(255, 255, 255);
+    }
+
+
+    header input
+    {
+      display: none;
+    }
+
+    li a:hover
+    {
+      color: rgb(66, 65, 65);
+      transition: color 1s;
+    }
+
+
+    @media (min-width:400px)
+    {
+      #logo-menu label
+      {
+        display: none;
+      }
+    }
+    
+
+    @media (max-width:600px)
+    {
+     
+      header li a
+      {
+        width: 25%;
+      }
+    }
+
+    @media (max-width:400px)
+    {
+      header
+      {
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: center;
+       height: 50px;
+       background-color: rgba(247, 146, 30, 0.849);
+      }
+
+      header:hover
+      {
+        background-color: rgba(247, 146, 30, 0.849);
+        height: 50px;
+        transition: all 1s;
+      }
+
+      header nav
+      {
+        height: 100vh;
+        width: 100%;
+        background-color:rgba(12, 8, 8, 0.767);
+        transition: all 0s;
+        transform: translateY(-150%);
+      }
+
+      header nav li
+      {
+       width: 100%;
+       border-bottom: 1px rgba(255, 255, 255, 0.123) solid;
+      }
+      header nav li:nth-child(4)
+      {
+        border-bottom: none;
+      }
+
+      li:hover
+      {
+        background: rgba(255, 255, 255, 0.301);
+      }
+      
+      
+      #logo-menu 
+      {
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+      }
+
+      #logo-menu label
+      {
+        padding-right: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+      }
+      #logo-menu label:hover
+      {
+        color:rgb(218, 214, 214);
+      }
+
+      #menu:checked ~ nav
+      {
+        transition: all 0.8s;
+        transform: translateY(0%);
+      }
+
+    }
+
+    #logo-menu
+    {
+      flex-basis: 50px;
+      height: 50px;
+      background-image: url("logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      align-self: center;
+      flex-grow: 1;
+    }
+
+
+    @media (max-width:800px)
+    {
+      #logo-menu
+      {
+        flex-basis: 50px;
+        height: 50px;
+      }
+    }
